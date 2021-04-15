@@ -1,18 +1,136 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
+<title>Visualization Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<body>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Navigation</button>
+  <div class="dropdown-content">
+  <a href="#">Main Page</a>
+  <a href="#">Temperature</a>
+  <a href="#">Humidity</a>
+  <a href="#">Cloudiness</a>
+  <a href="#">Wind Speed</a>
+  <a href="#">All Plots</a>
+  <a href="#">City Weather Data</a>
+  </div>
+</div>
 </head>
 
-<body>
-  <h1>Ryan Botzler</h1>
-  <img src="https://placehold.it/200x200" alt ="Your Name">
-  <p>Hi, I’m @rbotzl01</p>
-  <p>I’m interested in ...</p>
-  <p>I’m currently learning ...</p>
-  <p>I’m looking to collaborate on ...</p>
-  <p>How to reach me ...</p>
-</body>
 
+
+
+<h1>Visualization Dashboard</h1>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="#" class="w3-bar-item w3-button"> <img alt="Temp Plot" src="C:\Users\ryan.botzler\Downloads\NewZip\Homework\11-Web\visualizations\Fig1.png" width=150 height=70></a>
+   <p>1/5/2017 Temperature</p>
+  <a href="#" class="w3-bar-item w3-button"> <img alt="Hum Plot" src="C:\Users\ryan.botzler\Downloads\NewZip\Homework\11-Web\visualizations\Fig2.png" width=150 height=70></a>
+   <p>1/5/2017 Humidity</p>
+    <a href="#" class="w3-bar-item w3-button"> <img alt="Cloud Plot" src="C:\Users\ryan.botzler\Downloads\NewZip\Homework\11-Web\visualizations\Fig3.png" width=150 height=70></a>
+   <p>1/5/2017 Cloudiness</p>
+    <a href="#" class="w3-bar-item w3-button"> <img alt="Wind Plot" src="C:\Users\ryan.botzler\Downloads\NewZip\Homework\11-Web\visualizations\Fig4.png" width=150 height=70></a>
+   <p>1/5/2017 Wind Speed</p>
+  <a href="#" class="w3-bar-item w3-button">1/5/2017 All Plots</a>
+  <a href="#" class="w3-bar-item w3-button">6/13/2018 City Weather Data</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+
+<div class="w3-container w3-teal">
+  <h1>My Page</h1>
+</div>
+
+<img src="img_car.jpg" alt="Car" style="width:100%">
+
+<div class="w3-container">
+<h2>JHU Data Analytics Bootcamp Homework # 10</h2>
+<p>This site presents weather data findings for over 500 cities around the world.  The following links will direct you to plots of weather data extracted on June 13, 2018.</p>
+<p>The data used for the linked plots was formatted in imperial units (Temperature in degrees Fahrenheit, Wind Speed in MPH), Humidity and Cloudiness are percentages, Latitude and Longitude are in degrees, and the Date is in the 10-digit UNIX timestamp format.</p>
+</div>
+
+<div class="table-responsive">
+<table class="table">
+  <caption>List of users</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+</body>
 </html>
